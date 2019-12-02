@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "992670251935",
+    "firebase_url": "https://empresas-bbdc2.firebaseio.com",
+    "project_id": "empresas-bbdc2",
+    "storage_bucket": "empresas-bbdc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992670251935:android:ce066947c8f9605fe19baa",
+        "android_client_info": {
+          "package_name": "com.example.empresas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992670251935-tvkq7c6hocfm2aqlrke2gm9u7ge05k4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs4F05NxdXuc-QYtw-1oVBlmjUkVZ49gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992670251935-tvkq7c6hocfm2aqlrke2gm9u7ge05k4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

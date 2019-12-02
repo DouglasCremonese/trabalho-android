@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Company List</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_empresa">Add Company</string>
+    <string name="title_activity_lista_vaga">Job List</string>
+    <string name="title_activity_view_add_vaga">Job Register</string>
+    <string name="nomeVaga">Vacant job Name</string>
+    <string name="digitaVaga">Type the Vacant job:</string>
+    <string name="numeroSalario">Salary</string>
+    <string name="digitaSalario">Type the salary:</string>
+    <string name="botaoVaga">Register</string>
+
+
+    <string name="nomeEmpresa">Name</string>
+    <string name="digiteEmpresa">Type the company name:</string>
+    <string name="botaoEmpresa">Send</string>
+
+    <string name="numeroCamisaVaga">Number</string>
+    <string name="excluirLista">Are you sure you want to delete the list?</string>
+    <string name="excluirVaga">Are you sure?</string>
+
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="deletar">Deleting list...</string>
+    <string name="deletarVaga">Deleting...</string>
+
+
+
+
+
+
+</resources>
