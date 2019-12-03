@@ -4,34 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#585858"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.empresas.ViewAddProduto"
     tools:showIn="@layout/activity_view_add_vaga">
-
-    <!--<TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Quantidade"
-        app:layout_constraintBottom_toTopOf="@+id/edtQntdProduto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/edtQntdProduto"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Digite a quantidade do vaga..."
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />-->
 
     <TextView
         android:id="@+id/textView"
@@ -39,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
         android:text="@string/nomeVaga"
         app:layout_constraintBottom_toTopOf="@+id/edtNomeVaga"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +28,8 @@
         android:id="@+id/edtNomeVaga"
         android:layout_width="398dp"
         android:layout_height="45dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         android:ems="10"
         android:hint="@string/digitaVaga"
         android:inputType="textPersonName"
@@ -63,11 +42,12 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="0dp"
+        android:textColor="#ffffff"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/numeroSalario"
-        app:layout_constraintBottom_toTopOf="@+id/edtNumeroCamisa"
+        app:layout_constraintBottom_toTopOf="@+id/edtValorSalario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,10 +55,12 @@
         app:layout_constraintVertical_bias="0.923" />
 
     <EditText
-        android:id="@+id/edtNumeroCamisa"
+        android:id="@+id/edtValorSalario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         android:ems="10"
         android:hint="@string/digitaSalario"
         android:inputType="numberDecimal"

@@ -11,7 +11,7 @@ public class ViewAddProduto extends AppCompatActivity {
 
     private EditText edtNomeVaga;
     //private EditText edtQntdProduto;
-    private EditText edtNumeroCamisa;
+    private EditText edtValorSalario;
     private Button btnCadastrarVaga;
 
     @Override
@@ -21,7 +21,7 @@ public class ViewAddProduto extends AppCompatActivity {
 
         edtNomeVaga = (EditText)findViewById(R.id.edtNomeVaga);
         //edtQntdProduto = (EditText)findViewById(R.id.edtQntdProduto);
-        edtNumeroCamisa = (EditText)findViewById(R.id.edtNumeroCamisa);
+        edtValorSalario = (EditText)findViewById(R.id.edtValorSalario);
         btnCadastrarVaga = (Button)findViewById(R.id.btnCadastrarVaga);
 
         btnCadastrarVaga.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +37,7 @@ public class ViewAddProduto extends AppCompatActivity {
         Vaga j = new Vaga();
         j.setNomeVaga( edtNomeVaga.getText().toString() );
         //p.setQtdProduto(Integer.parseInt(edtQntdProduto.getText().toString()));
-        j.setNumeroCamisa(Integer.parseInt(edtNumeroCamisa.getText().toString()));
+        j.setValorSalario(Integer.parseInt(edtValorSalario.getText().toString()));
         VagaDAO.inserir( j, getIntent().getExtras().getInt("idLista2"), this );
         this.finish();
     }

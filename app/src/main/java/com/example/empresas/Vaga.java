@@ -4,7 +4,7 @@ public class Vaga {
 
     private int    idVaga;
     private String nomeVaga;
-    private int numeroCamisa;
+    private double valorSalario;
 
     public Vaga() {
     }
@@ -15,11 +15,11 @@ public class Vaga {
 
     public Vaga(String nomeProduto, int valor) {
         this.nomeVaga = nomeProduto;
-        this.numeroCamisa = valor;
+        this.valorSalario = valor;
     }
 
-    public Vaga(int numeroCamisa) {
-        this.numeroCamisa = numeroCamisa;
+    public Vaga(double valorSalario) {
+        this.valorSalario = valorSalario;
     }
 
     public int getIdVaga() {
@@ -36,11 +36,11 @@ public class Vaga {
         this.nomeVaga = nomeVaga;
     }
 
-    public double getNumeroCamisa() {
-        return numeroCamisa;
+    public double getValorSalario() {
+        return valorSalario;
     }
 
-    public void setNumeroCamisa(int numeroCamisa) {
-        this.numeroCamisa = numeroCamisa;
+    public void setValorSalario(double valorSalario) {
+        this.valorSalario = valorSalario;
     }
 }

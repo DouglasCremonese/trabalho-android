@@ -14,7 +14,7 @@ public class VagaDAO {
         Banco banco = new Banco(context);
         ContentValues valores = new ContentValues();
         valores.put("nome_Vaga", item.getNomeVaga());
-        valores.put("numero_camiseta", item.getNumeroCamisa());
+        valores.put("numero_camiseta", item.getValorSalario());
         //valores.put("valorProduto", item.getValor());
         valores.put("id_empresa_FK", idLista);
         SQLiteDatabase db = banco.getWritableDatabase();
@@ -41,7 +41,7 @@ public class VagaDAO {
                 Vaga vaga = new Vaga();
                 vaga.setIdVaga(cursor.getInt(0));
                 vaga.setNomeVaga(cursor.getString(2));
-                vaga.setNumeroCamisa(cursor.getInt(3));
+                vaga.setValorSalario(cursor.getInt(3));
                 //vaga.setValor(cursor.getDouble(4));
                 listaVaga.add(vaga);
 
@@ -63,7 +63,7 @@ public class VagaDAO {
                 Vaga item = new Vaga();
                 item.setIdVaga(cursor.getInt(0));
                 item.setNomeVaga(cursor.getString(2));
-                item.setNumeroCamisa(cursor.getInt(3));
+                item.setValorSalario(cursor.getInt(3));
                 //item.setValor(cursor.getDouble(4));
                 //System.out.println("DAO: TODOS PRODUTOS - " + " IDITEM:" + cursor.getInt(0) + " IDLISTA:" + cursor.getInt(1) + " NOME:" + cursor.getString(2) + " QTD:" + cursor.getInt(3) + " PRECO:" + cursor.getDouble(4));
                 listaVaga.add(item);

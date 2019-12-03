@@ -15,7 +15,7 @@
     <string name="digiteEmpresa">Type the company name:</string>
     <string name="botaoEmpresa">Send</string>
 
-    <string name="numeroCamisaVaga">Number</string>
+    <string name="numeroVaga">Salary</string>
     <string name="excluirLista">Are you sure you want to delete the list?</string>
     <string name="excluirVaga">Are you sure?</string>
 

@@ -70,15 +70,24 @@ public class ListaVaga extends AppCompatActivity {
                 return true;
             }
         });
+            lvListaVaga.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    AlertDialog.Builder alerta =
+                            new AlertDialog.Builder(ListaVaga.this);
+                    alerta.setTitle("VOCÊ SE CANDITADOU A VAGA!");
+                    alerta.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
 
-        /*lvListaProduto.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                final Vaga produtoSelecionado = produtos.get(position);
-            }*/
-    }
+                        }
 
-    private void carregarVagaPorEmpresa() {
+
+                    });
+                    alerta.show();
+    }});}
+
+    private void carregarVagaPorEmpresa(){
         vagas = VagaDAO.listar(this, getIntent().getExtras().getInt("idLista1"));
         adapter = new AdapterListaVaga(this, vagas);
         lvListaVaga.setAdapter(adapter);

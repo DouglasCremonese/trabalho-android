@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.empresas.R;
-
 import java.util.List;
 
 public class AdapterListaVaga extends BaseAdapter {
@@ -50,7 +48,7 @@ public class AdapterListaVaga extends BaseAdapter {
 
             item.tvNomeVaga = (TextView) convertView.findViewById(R.id.tvIdNomeVaga);
             //item.tvQtdProduto = (TextView) convertView.findViewById(R.id.tvQuantidaeProduto);
-            item.tvNumeroCamisa = (TextView) convertView.findViewById(R.id.tvNumeroCamisa);
+            item.tvSalario = (TextView) convertView.findViewById(R.id.tvSalario);
             item.tvIdVaga= (TextView) convertView.findViewById(R.id.tvIdVaga);
             convertView.setTag(item);
 
@@ -61,14 +59,14 @@ public class AdapterListaVaga extends BaseAdapter {
         Vaga prod = vagas.get(position);
         item.tvIdVaga.setText(String.valueOf(prod.getIdVaga()));
         item.tvNomeVaga.setText(prod.getNomeVaga());
-        item.tvNumeroCamisa.setText(String.valueOf(prod.getNumeroCamisa()));
+        item.tvSalario.setText(String.valueOf(prod.getValorSalario()));
 
 
         return convertView;
     }
 
     private class Suporte {
-        TextView tvNomeVaga, tvNumeroCamisa, tvIdVaga;
+        TextView tvNomeVaga, tvSalario, tvIdVaga;
     }
 
 }

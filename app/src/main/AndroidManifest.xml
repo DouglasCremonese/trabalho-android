@@ -21,7 +21,7 @@
             android:label="@string/title_activity_add_empresa"></activity>
         <activity
             android:name="com.example.empresas.loginActivity"
-            android:label="login">
+            android:label="Vagas de Empregos">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
